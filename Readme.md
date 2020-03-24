@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павел Хапрянинов](https://up.htmlacademy.ru/adaptive/19/user/862811).
-* Наставник: `Неизвестно`.
+* Наставник: [Натали Белоева](https://up.htmlacademy.ru/adaptive/19/user/1123699).
 
 ---
 
