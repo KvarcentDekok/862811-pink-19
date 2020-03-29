@@ -1,10 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Конкурс на самое безбашенное путешествие с Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="page-header__logo logo">
+        <picture class="logo__picture">
+          <img src="https://via.placeholder.com/150x150" width="75" height="22"
+               alt="Pink">
+        </picture>
+      </a>
+
+      <button type="button" class="page-header__toggle">
+        <span class="visually-hidden">Развернуть/свернуть меню</span>
+      </button>
+
+      <nav class="main-navigation">
+        <ul class="main-navigation__navigation-list navigation-list">
+          <li class="navigation-list__item">
+            <a href="index.html" class="navigation-list__link">Главная</a>
+          </li>
+          <li class="navigation-list__item">
+            <a href="photo.html" class="navigation-list__link">Фотографии</a>
+          </li>
+          <li class="navigation-list__item">
+            <a href="form.html" class="navigation-list__link">Конкурс</a>
+          </li>
+          <li class="navigation-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="navigation-list__link">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <div class="intro">
+        <h1 class="text text--large text--light">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+
+      <section class="contest">
+        <h2 class="visually-hidden">Форма для отправки на конкурс</h2>
+
+        <p class="text text--medium">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          Пожалуйста, заполните форму ниже:
+        </p>
+
+        <form class="form" method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="form__field">
+            <div class="text-control-block">
+              <label for="user-surname" class="form__label text-control-block__label">Фамилия</label>
+              <input type="text" id="user-surname" class="text-control-block__control" name="surname"
+                     placeholder="Укажите фамилию *" required>
+            </div>
+
+            <div class="custom-control">
+              <label for="user-name" class="form__label text-control-block__label">Имя</label>
+              <input type="text" id="user-name" class="text-control-block__control" name="name"
+                     placeholder="Введите ваше имя *" required>
+            </div>
+
+            <div class="custom-control">
+              <label for="user-patronymic" class="form__label text-control-block__label">Имя</label>
+              <input type="text" id="user-patronymic" class="text-control-block__control" name="patronymic"
+                     placeholder="Ну и отчество тоже">
+            </div>
+          </fieldset>
+
+          <fieldset class="form__field form__field--bg--darker">
+            <legend class="form__label">Ваши безбашенные достижения в путешествии</legend>
+
+            <ul class="form__list">
+              <li class="checkbox-block">
+                <label for="shark-selfie" class="checkbox-block__label">Сделал селфи с акулой</label>
+                <input type="checkbox" id="shark-selfie" class="checkbox-block__control" name="achievements"
+                       value="Сделал селфи с акулой">
+              </li>
+              <li class="checkbox-block">
+                <label for="sunburned" class="checkbox-block__label">Обгорел на пляже</label>
+                <input type="checkbox" id="sunburned" class="checkbox-block__control" name="achievements"
+                       value="Обгорел на пляже">
+              </li>
+              <li class="checkbox-block">
+                <label for="chuck" class="checkbox-block__label">Видел Чака Норриса</label>
+                <input type="checkbox" id="chuck" class="checkbox-block__control" name="achievements"
+                       value="Видел Чака Норриса">
+              </li>
+              <li class="checkbox-block">
+                <label for="souvenirs" class="checkbox-block__label">Накупил сувениров</label>
+                <input type="checkbox" id="souvenirs" class="checkbox-block__control" name="achievements"
+                       value="Накупил сувениров">
+              </li>
+              <li class="checkbox-block">
+                <label for="held-tower" class="checkbox-block__label">Удержал башню</label>
+                <input type="checkbox" id="held-tower" class="checkbox-block__control" name="achievements"
+                       value="Удержал башню">
+              </li>
+              <li class="checkbox-block">
+                <label for="rampage" class="checkbox-block__label">Разгромил отель</label>
+                <input type="checkbox" id="rampage" class="checkbox-block__control" name="achievements"
+                       value="Разгромил отель">
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a href="index.html" class="page-footer__logo logo">
+        <picture class="logo__picture">
+          <img src="https://via.placeholder.com/150x150" width="75" height="22"
+               alt="Pink">
+        </picture>
+      </a>
+
+      <ul class="social">
+        <li class="social__item">
+          <a href="https://twitter.com/" class="social__link social__link--twitter">
+            <span class="visually-hidden">Pink в Twitter</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="https://facebook.com/" class="social__link social__link--facebook">
+            <span class="visually-hidden">Pink в Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="https://youtube.com/" class="social__link social__link--youtube">
+            <span class="visually-hidden">Pink в Youtube</span>
+          </a>
+        </li>
+      </ul>
+
+      <p class="copyright">
+        Разработано
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </p>
+    </footer>
+   </body>
 </html>
