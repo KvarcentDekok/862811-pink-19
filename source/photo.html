@@ -51,10 +51,12 @@
         <ul class="photo-feed__photo-list photo-list">
           <li class="photo-list__item">
             <figure class="photo-list__photo-object photo-object">
-              <picture class="photo-object__photo photo-object__photo--panorama">
-                <img src="https://via.placeholder.com/150x150" width="320" height="137"
-                      alt="Панорама из приложения Pink">
-              </picture>
+              <a href="#" class="photo-list__link">
+                <picture class="photo-object__photo photo-object__photo--panorama">
+                  <img src="https://via.placeholder.com/150x150" width="320" height="137"
+                        alt="Панорама из приложения Pink">
+                </picture>
+              </a>
 
               <p class="photo-object__label label">Панорама дня</p>
 
@@ -76,10 +78,12 @@
           </li>
           <li class="photo-list__item">
             <figure class="photo-list__photo-object photo-object">
-              <picture class="photo-object__photo">
-                <img src="https://via.placeholder.com/150x150" width="280" height="180"
-                      alt="Фотография из приложения Pink">
-              </picture>
+              <a href="#" class="photo-list__link">
+                <picture class="photo-object__photo">
+                  <img src="https://via.placeholder.com/150x150" width="280" height="180"
+                        alt="Фотография из приложения Pink">
+                </picture>
+              </a>
 
               <figcaption class="photo-object__description">
                 <blockquote class="photo-object__comment comment">
@@ -98,10 +102,12 @@
           </li>
           <li class="photo-list__item">
             <figure class="photo-list__photo-object photo-object">
-              <picture class="photo-object__photo">
-                <img src="https://via.placeholder.com/150x150" width="280" height="180"
-                      alt="Фотография из приложения Pink">
-              </picture>
+              <a href="#" class="photo-list__link">
+                <picture class="photo-object__photo">
+                  <img src="https://via.placeholder.com/150x150" width="280" height="180"
+                        alt="Фотография из приложения Pink">
+                </picture>
+              </a>
 
               <figcaption class="photo-object__description">
                 <blockquote class="photo-object__comment comment">
@@ -120,10 +126,12 @@
           </li>
           <li class="photo-list__item">
             <figure class="photo-list__photo-object photo-object">
-              <picture class="photo-object__photo">
-                <img src="https://via.placeholder.com/150x150" width="280" height="180"
-                      alt="Фотография из приложения Pink">
-              </picture>
+              <a href="#" class="photo-list__link">
+                <picture class="photo-object__photo">
+                  <img src="https://via.placeholder.com/150x150" width="280" height="180"
+                        alt="Фотография из приложения Pink">
+                </picture>
+              </a>
 
               <figcaption class="photo-object__description">
                 <blockquote class="photo-object__comment comment">
@@ -142,10 +150,12 @@
           </li>
           <li class="photo-list__item">
             <figure class="photo-list__photo-object photo-object">
-              <picture class="photo-object__photo">
-                <img src="https://via.placeholder.com/150x150" width="280" height="180"
-                      alt="Фотография из приложения Pink">
-              </picture>
+              <a href="#" class="photo-list__link">
+                <picture class="photo-object__photo">
+                  <img src="https://via.placeholder.com/150x150" width="280" height="180"
+                        alt="Фотография из приложения Pink">
+                </picture>
+              </a>
 
               <figcaption class="photo-object__description">
                 <blockquote class="photo-object__comment comment">
@@ -164,10 +174,12 @@
           </li>
           <li class="photo-list__item">
             <figure class="photo-list__photo-object photo-object">
-              <picture class="photo-object__photo">
-                <img src="https://via.placeholder.com/150x150" width="280" height="180"
-                      alt="Фотография из приложения Pink">
-              </picture>
+              <a href="#" class="photo-list__link">
+                <picture class="photo-object__photo">
+                  <img src="https://via.placeholder.com/150x150" width="280" height="180"
+                        alt="Фотография из приложения Pink">
+                </picture>
+              </a>
 
               <figcaption class="photo-object__description">
                 <blockquote class="photo-object__comment comment">
@@ -186,10 +198,12 @@
           </li>
           <li class="photo-list__item">
             <figure class="photo-list__photo-object photo-object">
-              <picture class="photo-object__photo">
-                <img src="https://via.placeholder.com/150x150" width="280" height="180"
-                      alt="Фотография из приложения Pink">
-              </picture>
+              <a href="#" class="photo-list__link">
+                <picture class="photo-object__photo">
+                  <img src="https://via.placeholder.com/150x150" width="280" height="180"
+                        alt="Фотография из приложения Pink">
+                </picture>
+              </a>
 
               <figcaption class="photo-object__description">
                 <blockquote class="photo-object__comment comment">
@@ -213,6 +227,48 @@
           Выкладывайте все, что накопилось в телефоне!
         </p>
       </section>
+
+      <form class="photo-form">
+        <a href="#" class="photo-list__link">
+          <picture class="photo-object__photo">
+            <img src="https://via.placeholder.com/150x150" width="280" height="374"
+                  alt="Фотография для отправки в Pink">
+          </picture>
+        </a>
+
+        <ul class="photo-form__refinement refinement">
+          <li class="refinement__item">
+            <label for="crop" class="refinement__option refinement__option--crop">
+              <span class="visually-hidden">Обрезка</span>
+            </label>
+          </li>
+          <li class="refinement__item">
+            <label for="contrast" class="refinement__option refinement__option--contrast">
+              <span class="visually-hidden">Контраст</span>
+            </label>
+          </li>
+          <li class="refinement__item">
+            <label for="fill" class="refinement__option refinement__option--fill">
+              <span class="visually-hidden">Заливка</span>
+            </label>
+          </li>
+        </ul>
+
+        <ul class="photo-form__controls">
+          <li class="range-block">
+            <input type="range" class="range-block__control" id="crop" name="crop" min="0" max="100" value="90">
+          </li>
+          <li class="range-block">
+            <input type="range" class="range-block__control" id="contrast" name="contrast" min="0" max="100" value="90">
+          </li>
+          <li class="range-block">
+            <input type="range" class="range-block__control" id="fill" name="fill" min="0" max="100" value="90">
+          </li>
+        </ul>
+
+        <button type="submit" class="button photo-form__button photo-form__button--type--submit">Запостить</button>
+        <button type="reset" class="button photo-form__button photo-form__button--type--reset">Отмена</button>
+      </form>
     </main>
 
     <footer class="page-footer">
