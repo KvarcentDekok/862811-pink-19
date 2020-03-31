@@ -63,7 +63,7 @@
             </div>
 
             <div class="text-control-block">
-              <label for="user-patronymic" class="form__label text-control-block__label">Имя</label>
+              <label for="user-patronymic" class="form__label text-control-block__label">Отчество</label>
               <input type="text" id="user-patronymic" class="text-control-block__control" name="patronymic"
                       placeholder="Ну и отчество тоже">
             </div>
@@ -105,6 +105,54 @@
               </li>
             </ul>
           </fieldset>
+
+          <fieldset class="form__field">
+            <div class="text-control-block">
+              <label for="user-phone-number" class="form__label text-control-block__label">Номер телефона</label>
+              <input type="tel" id="user-phone-number" class="text-control-block__control" name="phone-number"
+                      placeholder="Номер, пожалуйста">
+            </div>
+
+            <div class="text-control-block">
+              <label for="user-email" class="form__label text-control-block__label">Адрес почты</label>
+              <input type="email" id="user-email" class="text-control-block__control" name="email"
+                      placeholder="Введите почту *" required>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__field form__field--bg--darker">
+            <legend class="form__label">С каким приложением путешествовали?</legend>
+
+            <ul class="form__list">
+              <li class="radio-block">
+                <label for="app-ios" class="radio-block__label">Pink на iOS</label>
+                <input type="radio" id="app-ios" class="radio-block__control" name="app"
+                        value="Pink на iOS">
+              </li>
+              <li class="radio-block">
+                <label for="app-android" class="radio-block__label">Pink а Android</label>
+                <input type="radio" id="app-android" class="radio-block__control" name="app"
+                        value="Pink а Android">
+              </li>
+              <li class="radio-block">
+                <label for="app-windows" class="radio-block__label">Windows Phone</label>
+                <input type="radio" id="app-windows" class="radio-block__control" name="app"
+                        value="Pink на Windows Phone">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form__field">
+            <div class="text-control-block">
+              <label for="user-emotions" class="form__label">Опишите свои эмоции</label>
+              <textarea id="user-emotions" class="text-control-block__control" name="emotions"
+                         placeholder="Можно прям в красках, не стесняясь в выражениях" rows="6"></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="form__button">Отправить форму</button>
+
+          <small class="form__hint"><sup class="form__designation">*</sup> — обязательные поля</small>
         </form>
       </section>
     </main>
