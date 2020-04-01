@@ -51,7 +51,7 @@
         <ul class="photo-feed__photo-list photo-list">
           <li class="photo-list__item">
             <figure class="photo-list__photo-object photo-object">
-              <a href="#" class="photo-list__link">
+              <a href="#" class="photo-object__link">
                 <picture class="photo-object__photo photo-object__photo--panorama">
                   <img src="https://via.placeholder.com/150x150" width="320" height="137"
                         alt="Панорама из приложения Pink">
@@ -78,7 +78,7 @@
           </li>
           <li class="photo-list__item">
             <figure class="photo-list__photo-object photo-object">
-              <a href="#" class="photo-list__link">
+              <a href="#" class="photo-object__link">
                 <picture class="photo-object__photo">
                   <img src="https://via.placeholder.com/150x150" width="280" height="180"
                         alt="Фотография из приложения Pink">
@@ -102,7 +102,7 @@
           </li>
           <li class="photo-list__item">
             <figure class="photo-list__photo-object photo-object">
-              <a href="#" class="photo-list__link">
+              <a href="#" class="photo-object__link">
                 <picture class="photo-object__photo">
                   <img src="https://via.placeholder.com/150x150" width="280" height="180"
                         alt="Фотография из приложения Pink">
@@ -126,7 +126,7 @@
           </li>
           <li class="photo-list__item">
             <figure class="photo-list__photo-object photo-object">
-              <a href="#" class="photo-list__link">
+              <a href="#" class="photo-object__link">
                 <picture class="photo-object__photo">
                   <img src="https://via.placeholder.com/150x150" width="280" height="180"
                         alt="Фотография из приложения Pink">
@@ -150,7 +150,7 @@
           </li>
           <li class="photo-list__item">
             <figure class="photo-list__photo-object photo-object">
-              <a href="#" class="photo-list__link">
+              <a href="#" class="photo-object__link">
                 <picture class="photo-object__photo">
                   <img src="https://via.placeholder.com/150x150" width="280" height="180"
                         alt="Фотография из приложения Pink">
@@ -174,7 +174,7 @@
           </li>
           <li class="photo-list__item">
             <figure class="photo-list__photo-object photo-object">
-              <a href="#" class="photo-list__link">
+              <a href="#" class="photo-object__link">
                 <picture class="photo-object__photo">
                   <img src="https://via.placeholder.com/150x150" width="280" height="180"
                         alt="Фотография из приложения Pink">
@@ -198,7 +198,7 @@
           </li>
           <li class="photo-list__item">
             <figure class="photo-list__photo-object photo-object">
-              <a href="#" class="photo-list__link">
+              <a href="#" class="photo-object__link">
                 <picture class="photo-object__photo">
                   <img src="https://via.placeholder.com/150x150" width="280" height="180"
                         alt="Фотография из приложения Pink">
@@ -228,13 +228,15 @@
         </p>
       </section>
 
-      <form class="photo-form">
-        <a href="#" class="photo-list__link">
-          <picture class="photo-object__photo">
-            <img src="https://via.placeholder.com/150x150" width="280" height="374"
-                  alt="Фотография для отправки в Pink">
-          </picture>
-        </a>
+      <form class="photo-form" method="post" action="https://echo.htmlacademy.ru">
+        <figure class="photo-form__photo-object photo-object">
+          <a href="#" class="photo-object__link">
+            <picture class="photo-object__photo">
+              <img src="https://via.placeholder.com/150x150" width="280" height="374"
+                   alt="Фотография для отправки в Pink">
+            </picture>
+          </a>
+        </figure>
 
         <ul class="photo-form__refinement refinement">
           <li class="refinement__item">
