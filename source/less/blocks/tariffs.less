@@ -3,3 +3,76 @@
 
   background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat top center;
 }
+
+.tariffs__head-cell {
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  position: relative;
+
+  text-align: center;
+
+  background-color: #283645;
+}
+
+.tariffs__head-cell--hit {
+  background: #283645 url("../../img/bg-hit.svg") no-repeat top left;
+
+  &::before {
+    width: 74px;
+    height: 74px;
+
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    content: "ХИТ";
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+
+    transform: rotate(-45deg);
+  }
+}
+
+.tariffs__name {
+  margin-bottom: 5px;
+
+  text-transform: uppercase;
+}
+
+.tariffs__price {
+  margin-bottom: 0;
+
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.tariffs__option {
+  font-size: 14px;
+  line-height: 30px;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.tariffs__availability {
+  margin: 0;
+
+  &--type {
+    &--available {
+      width: 31px;
+      height: 31px;
+
+      background: url("../img/icon-yes.svg") no-repeat center;
+      background-size: 100%;
+    }
+
+    &--unavailable {
+      width: 27px;
+      height: 27px;
+
+      background: url("../img/icon-no.svg") no-repeat center;
+    }
+  }
+}
