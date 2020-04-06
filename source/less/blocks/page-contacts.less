@@ -1,0 +1,29 @@
+.page-contacts {
+  padding-top: 42px;
+}
+
+.page-contacts__link {
+  color: @main-color;
+  text-decoration: none;
+}
+
+.page-contacts__map-wrapper {
+  position: relative;
+
+  &::before {
+    width: 100%;
+    height: 62px;
+
+    position: absolute;
+    top: 0;
+
+    content: "";
+
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat center;
+    pointer-events: none;
+  }
+}
+
+.page-contacts__map {
+  border: none;
+}
