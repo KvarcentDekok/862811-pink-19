@@ -1,5 +1,10 @@
 .download {
-  padding: 28px 20px 0;
+  padding: 28px 20px 32px;
+  margin: 0 -20px;
+
+  text-align: center;
+
+  background-color: #1d2631;
 }
 
 .download__button {
@@ -8,4 +13,28 @@
   color: #ffffff;
 
   border-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    margin: 0;
+    padding: 0;
+
+    background-color: transparent;
+  }
+
+  .download__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download__button {
+    margin-bottom: 60px;
+  }
+
+  .download__resources-list {
+    margin-bottom: 50px;
+  }
 }

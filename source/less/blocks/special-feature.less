@@ -1,0 +1,124 @@
+.special-feature {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .special-feature {
+    display: block;
+    padding: 59px 0 52px;
+
+    background-color: #ffffff;
+  }
+
+  .special-feature__container {
+    position: relative;
+
+    &::before {
+      width: 202px;
+      height: 202px;
+      border: 13px solid @main-color;
+
+      position: absolute;
+      top: 0;
+      left: 38px;
+      z-index: 1;
+
+      content: "24";
+      font-weight: bold;
+      font-size: 96px;
+      line-height: 176px;
+      color: @main-color;
+      text-align: center;
+
+      border-radius: 50%;
+    }
+
+    &::after {
+      width: 238px;
+      height: 276px;
+
+      position: absolute;
+      top: -55px;
+      left: 20px;
+      z-index: 0;
+
+      content: "";
+
+      background: url("../img/icon-timer.svg") no-repeat center;
+      background-size: 100%;
+    }
+  }
+
+  .special-feature__title {
+    margin-top: 43px;
+
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+  }
+
+  .special-feature__link {
+    display: block;
+
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 36px;
+    color: @main-color;
+  }
+
+  .special-feature__text,
+  .special-feature__title,
+  .special-feature__link {
+    max-width: 50%;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .special-feature {
+    padding-bottom: 90px;
+
+    background-color: #F2F2F2;
+  }
+
+  .special-feature__container {
+    &::before {
+      width: 253px;
+      height: 253px;
+      border-width: 16px;
+
+      left: 152px;
+
+      font-size: 120px;
+      line-height: 221px;
+    }
+
+    &::after {
+      width: 298px;
+      height: 345px;
+
+      top: -69px;
+      left: 130px;
+    }
+  }
+
+  .special-feature__title {
+    br {
+      display: none;
+    }
+  }
+
+  .special-feature__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .special-feature__text,
+  .special-feature__title,
+  .special-feature__link {
+    max-width: 574px;
+    margin-left: auto;
+  }
+}

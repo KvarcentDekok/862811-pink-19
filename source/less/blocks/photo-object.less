@@ -1,5 +1,41 @@
+.photo-object {
+  margin: 0 0 20px;
+
+  position: relative;
+}
+
+.photo-object__link {
+  display: block;
+}
+
+.photo-object__photo {
+  display: block;
+
+  img {
+    display: block;
+  }
+}
+
+.photo-object__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .photo-object__description {
   padding: 20px;
 
   background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-object {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .photo-object__description {
+    flex-grow: 1;
+  }
 }

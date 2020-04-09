@@ -1,0 +1,39 @@
+.resources-list {
+  .list-reset();
+
+  margin: 32px 0 22px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.resources-list__item {
+  margin: 0 18px;
+}
+
+.resources-list__link {
+  display: block;
+
+  &--ios {
+    width: 47px;
+    height: 56px;
+
+    background: url("../img/logo-apple.svg") no-repeat center;
+  }
+
+  &--android {
+    width: 43px;
+    height: 47px;
+
+    background: url("../img/logo-android.svg") no-repeat center;
+  }
+
+  &--windows {
+    width: 44px;
+    height: 41px;
+
+    background: url("../img/logo-microsoft.svg") no-repeat center;
+  }
+}
