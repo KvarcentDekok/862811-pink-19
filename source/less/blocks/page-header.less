@@ -1,5 +1,3 @@
-@padding-top-mobile: 22px;
-
 .page-header {
   z-index: 100;
 
@@ -14,7 +12,7 @@
 
 .page-header__logo,
 .page-header__toggle {
-  padding: @padding-top-mobile 0 18px;
+  padding: 22px 0 18px;
 }
 
 .page-header__toggle {
@@ -26,20 +24,7 @@
 
   background-color: transparent;
   cursor: pointer;
-
-  &::before {
-    width: 24px;
-    height: 24px;
-
-    position: absolute;
-    top: @padding-top-mobile;
-    left: 50%;
-
-    content: "";
-
-    background: url("../img/icon-menu-cross.svg") no-repeat center;
-    transform: translateX(-50%);
-  }
+  background: url("../img/icon-menu-cross.svg") no-repeat center;
 }
 
 @media (min-width: @desktop-width) {
