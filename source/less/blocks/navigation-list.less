@@ -1,8 +1,42 @@
+.navigation-list {
+  .list-reset();
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation-list__item {
+  width: 100%;
+
+  border-top: @nav-link-border-top;
+  border-bottom: @nav-link-border-bottom;
+}
+
 .navigation-list__link {
+  display: block;
   margin: 0;
+  padding: 20px 0;
 
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: @desktop-width) {
+  .navigation-list {
+    justify-content: space-between;
+  }
+
+  .navigation-list__item {
+    width: auto;
+    border: none;
+  }
+
+  .navigation-list__link {
+    padding: 43px 40px;
+    font-weight: normal;
+    text-transform: none;
+  }
 }

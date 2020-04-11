@@ -3,4 +3,17 @@
   margin-bottom: 48px;
 
   line-height: 30px;
+  text-align: center;
+
+  br {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-feed__text {
+    br {
+      display: inline;
+    }
+  }
 }

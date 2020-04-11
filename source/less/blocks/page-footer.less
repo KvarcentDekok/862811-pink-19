@@ -1,0 +1,27 @@
+.page-footer {
+  padding: 40px 0;
+
+  &--index {
+    display: none;
+  }
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    &--index {
+      display: block;
+    }
+  }
+
+  .page-footer__container {
+    flex-direction: row;
+  }
+}
