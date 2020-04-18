@@ -1,4 +1,90 @@
+.text-control-block {
+  margin-bottom: 18px;
+
+  position: relative;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
 .text-control-block__label {
+  margin-bottom: 9px;
+
   text-align: left;
   padding-left: 22px;
+}
+
+.text-control-block__control {
+  width: 100%;
+  border: 2px solid #e5e5e5;
+  padding: 19px;
+
+  resize: vertical;
+}
+
+@media (min-width: @tablet-width) {
+  .text-control-block {
+    margin-bottom: 52px;
+
+    &--linear {
+      display: flex;
+      align-items: center;
+
+      .text-control-block__label {
+        margin-right: 16px;
+        padding-left: 0;
+      }
+    }
+
+    &--reverse {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-bottom: 35px;
+
+      .text-control-block__label {
+        margin-top: 15px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .text-control-block__label--icon {
+    &::after {
+      width: 60px;
+      height: 60px;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      content: "";
+
+      background-color: #e5e5e5;
+    }
+
+    &--phone {
+      &::after {
+        background: #e5e5e5 url("../img/icon-phone.svg") no-repeat center;
+      }
+    }
+
+    &--mail {
+      &::after {
+        background: #e5e5e5 url("../img/icon-mail.svg") no-repeat center;
+      }
+    }
+  }
+
+  .text-control-block__control {
+    &--icon {
+      padding-right: 60px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .text-control-block {
+    margin-bottom: 54px;
+  }
 }

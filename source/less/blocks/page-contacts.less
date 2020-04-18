@@ -2,6 +2,10 @@
   padding-top: 42px;
 }
 
+.page-contacts__title {
+  text-align: center;
+}
+
 .page-contacts__link {
   color: @main-color;
   text-decoration: none;
@@ -20,10 +24,42 @@
     content: "";
 
     background: url("../img/bg-triangle-white-footer.svg") no-repeat center;
+    background-size: cover;
     pointer-events: none;
   }
 }
 
 .page-contacts__map {
+  width: 100%;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-contacts__link {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .page-contacts__map-wrapper {
+    &::before {
+      height: 123px;
+      background-size: cover;
+    }
+  }
+
+  .page-contacts__map {
+    height: 415px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-contacts__map-wrapper {
+    &::before {
+      height: 11vw;
+    }
+  }
+
+  .page-contacts__map {
+    height: 522px;
+  }
 }

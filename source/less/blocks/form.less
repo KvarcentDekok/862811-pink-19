@@ -1,9 +1,30 @@
-.form__field {
+.form__container {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+.form__wrapper {
+  padding: 38px 20px;
+  margin: 0 auto;
+
   &--bg {
     &--darker {
       background-color: #f2f2f2;
     }
   }
+}
+
+.form__field {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__list {
+  .list-reset();
+
+  margin-top: 30px;
 }
 
 .form__label {
@@ -13,14 +34,144 @@
   text-transform: uppercase;
   color: @main-color;
   text-align: center;
+
+  &--legend {
+    margin-bottom: 16px;
+  }
 }
 
 .form__hint {
+  display: block;
+  margin-top: 38px;
+
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .form__designation {
   color: @main-color;
+}
+
+@media (min-width: @tablet-width) {
+  .form__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: @tablet-width;
+  }
+
+  .form__wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    background-color: transparent;
+
+    &--block {
+      &--person {
+        order: 1;
+      }
+
+      &--app {
+        order: 2;
+      }
+
+      &--contacts {
+        order: 3;
+      }
+
+      &--achievements {
+        order: 4;
+      }
+
+      &--emotions {
+        order: 5;
+      }
+    }
+  }
+
+  .form__field {
+    border: 2px solid #e5e5e5;
+    margin: 31px 0;
+    padding: 30px 0 50px;
+
+    &--non-bordered {
+      border: none;
+      padding: 0;
+
+      .form__list {
+        padding: 0;
+      }
+    }
+  }
+
+  .form__label {
+    padding: 0 25px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .form__list {
+    margin: 10px 0;
+    padding: 0 64px;
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .form__button-alternative {
+    width: auto;
+    padding-left: 59px;
+    padding-right: 59px;
+  }
+
+  .form__hint {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__container {
+    max-width: @desktop-width;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .form__wrapper--block {
+    &--person {
+      max-width: 50%;
+      padding-right: 33px;
+    }
+
+    &--app {
+      max-width: 50%;
+      padding-left: 33px;
+
+      .form__list {
+        padding: 0 80px;
+      }
+
+      .form__label {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+    }
+  }
+
+  .form__list {
+    padding: 0 60px;
+  }
+
+  .form__label {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }

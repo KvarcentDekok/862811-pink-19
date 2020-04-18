@@ -1,0 +1,150 @@
+.range-block {
+  margin: 0 16px;
+  padding-bottom: 71px;
+}
+
+.range-block__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+
+  &--active {
+    .range-block__color {
+      fill: @main-color;
+    }
+  }
+}
+
+.range-block__color {
+  fill: fade(@text-color, 30%);
+}
+
+.range-block__control {
+  display: none;
+  width: 240px;
+
+  position: absolute;
+  left: 20px;
+  bottom: 28px;
+
+  -webkit-appearance: none;
+  background-color: transparent;
+
+  &--show {
+    display: block;
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+
+    cursor: pointer;
+    background-color: @text-color;
+  }
+
+  &::-moz-range-track {
+    width: 100%;
+    height: 2px;
+
+    cursor: pointer;
+    background-color: @text-color;
+    border-color: transparent;
+  }
+
+  &::-ms-track {
+    width: 100%;
+    height: 2px;
+    border-color: transparent;
+    border-width: 11px 0;
+
+    color: transparent;
+
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  &::-ms-fill-lower {
+    background-color: @text-color;
+  }
+
+  &::-ms-fill-upper {
+    background-color: @text-color;
+  }
+
+  &::-webkit-slider-thumb {
+    margin-top: -6px;
+    border: 2px solid @main-color;
+    height: 14px;
+    width: 14px;
+
+    -webkit-appearance: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: box-shadow 200ms;
+  }
+
+  &::-moz-range-thumb {
+    border: 2px solid @main-color;
+    height: 14px;
+    width: 14px;
+    box-sizing: border-box;
+
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: box-shadow 200ms;
+  }
+
+  &::-ms-thumb {
+    border: 2px solid @main-color;
+    height: 14px;
+    width: 14px;
+    box-sizing: border-box;
+
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: box-shadow 200ms;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .range-block {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid fade(@text-color, 10%);
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .range-block__label {
+    width: 24px;
+    height: 24px;
+    margin-right: 28px;
+  }
+
+  .range-block__control {
+    display: block;
+    flex-grow: 1;
+
+    position: initial;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range-block {
+    padding-bottom: 11px;
+    margin-bottom: 15px;
+  }
+
+  .range-block__label {
+    width: 48px;
+    height: 48px;
+    margin-right: 44px;
+  }
+}

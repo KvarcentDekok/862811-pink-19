@@ -52,117 +52,154 @@
       <section class="contest">
         <h2 class="visually-hidden">Форма для отправки на конкурс</h2>
 
-        <p class="text text--small">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-          Пожалуйста, заполните форму ниже:
-        </p>
+        <div class="container">
+          <p class="text text--small contest__text">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            Пожалуйста, заполните форму ниже:
+          </p>
+        </div>
 
-        <form class="form" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__field">
-            <div class="text-control-block">
-              <label for="user-surname" class="form__label text-control-block__label">Фамилия:</label>
-              <input type="text" id="user-surname" class="text-control-block__control" name="user-surname"
-                      placeholder="Укажите фамилию *" required>
+          <form class="form" method="post" action="https://echo.htmlacademy.ru">
+            <div class="container form__container">
+              <div class="form__wrapper form__wrapper--block--person">
+                <fieldset class="form__field form__field--non-bordered">
+                  <ul class="form__list">
+                    <li class="text-control-block text-control-block--linear">
+                      <label for="user-surname" class="form__label text-control-block__label">Фамилия:</label>
+                      <input type="text" id="user-surname" class="text-control-block__control" name="user-surname"
+                             placeholder="Укажите фамилию *" required>
+                    </li>
+
+                    <li class="text-control-block text-control-block--linear">
+                      <label for="user-name" class="form__label text-control-block__label">Имя:</label>
+                      <input type="text" id="user-name" class="text-control-block__control" name="user-name"
+                             placeholder="Введите ваше имя *" required>
+                    </li>
+
+                    <li class="text-control-block text-control-block--linear">
+                      <label for="user-patronymic" class="form__label text-control-block__label">Отчество:</label>
+                      <input type="text" id="user-patronymic" class="text-control-block__control" name="user-patronymic"
+                             placeholder="Ну и отчество тоже">
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+
+              <div class="form__wrapper form__wrapper--bg--darker form__wrapper--block--achievements">
+                <fieldset class="form__field">
+                  <legend class="form__label">Ваши безбашенные <br> достижения в путешествии</legend>
+
+                  <ul class="form__list">
+                    <li class="checkbox-block">
+                      <input type="checkbox" id="shark-selfie" class="checkbox-block__control" name="achievements"
+                             value="Сделал селфи с акулой">
+                      <label for="shark-selfie" class="checkbox-block__label">Сделал селфи с акулой</label>
+                    </li>
+                    <li class="checkbox-block">
+                      <input type="checkbox" id="sunburned" class="checkbox-block__control" name="achievements"
+                             value="Обгорел на пляже">
+                      <label for="sunburned" class="checkbox-block__label">Обгорел на пляже</label>
+                    </li>
+                    <li class="checkbox-block">
+                      <input type="checkbox" id="chuck" class="checkbox-block__control" name="achievements"
+                             value="Видел Чака Норриса">
+                      <label for="chuck" class="checkbox-block__label">Видел Чака Норриса</label>
+                    </li>
+                    <li class="checkbox-block">
+                      <input type="checkbox" id="souvenirs" class="checkbox-block__control" name="achievements"
+                             value="Накупил сувениров">
+                      <label for="souvenirs" class="checkbox-block__label">Накупил сувениров</label>
+                    </li>
+                    <li class="checkbox-block">
+                      <input type="checkbox" id="held-tower" class="checkbox-block__control" name="achievements"
+                             value="Удержал башню">
+                      <label for="held-tower" class="checkbox-block__label">Удержал башню</label>
+                    </li>
+                    <li class="checkbox-block">
+                      <input type="checkbox" id="rampage" class="checkbox-block__control" name="achievements"
+                             value="Разгромил отель">
+                      <label for="rampage" class="checkbox-block__label">Разгромил отель</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+
+              <div class="form__wrapper form__wrapper--block--contacts">
+                <fieldset class="form__field">
+                  <legend class="form__label visually-hidden visually-hidden--mobile">Контактная информация</legend>
+
+                  <ul class="form__list">
+                    <li class="text-control-block text-control-block--reverse">
+                      <label for="user-phone-number"
+                             class="form__label text-control-block__label text-control-block__label--icon
+                            text-control-block__label--icon--phone">
+                        Номер телефона
+                      </label>
+                      <input type="tel" id="user-phone-number"
+                             class="text-control-block__control text-control-block__control--icon"
+                             name="user-phone-number" placeholder="Номер, пожалуйста">
+                    </li>
+
+                    <li class="text-control-block text-control-block--reverse">
+                      <label for="user-email"
+                             class="form__label text-control-block__label text-control-block__label--icon
+                            text-control-block__label--icon--mail">
+                        Адрес почты
+                      </label>
+                      <input type="email" id="user-email"
+                             class="text-control-block__control text-control-block__control--icon" name="user-email"
+                             placeholder="Введите почту *" required>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+
+              <div class="form__wrapper form__wrapper--bg--darker form__wrapper--block--app">
+                <fieldset class="form__field">
+                  <legend class="form__label">С каким приложением путешествовали?</legend>
+
+                  <ul class="form__list">
+                    <li class="radio-block">
+                      <input type="radio" id="app-ios" class="radio-block__control" name="app"
+                             value="Pink на iOS">
+                      <label for="app-ios" class="radio-block__label">Pink на iOS</label>
+                    </li>
+                    <li class="radio-block">
+                      <input type="radio" id="app-android" class="radio-block__control" name="app"
+                             value="Pink а Android">
+                      <label for="app-android" class="radio-block__label">Pink а Android</label>
+                    </li>
+                    <li class="radio-block">
+                      <input type="radio" id="app-windows" class="radio-block__control" name="app"
+                             value="Pink на Windows Phone">
+                      <label for="app-windows" class="radio-block__label">Windows Phone</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+
+              <div class="form__wrapper form__wrapper--block--emotions">
+                <fieldset class="form__field">
+                  <legend class="form__label form__label--legend">
+                    <label for="user-emotions">Опишите свои эмоции</label>
+                  </legend>
+
+                  <ul class="form__list">
+                    <li class="text-control-block">
+                    <textarea id="user-emotions" class="text-control-block__control" name="user-emotions"
+                              placeholder="Можно прям в красках, не стесняясь в выражениях" rows="6"></textarea>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
             </div>
 
-            <div class="text-control-block">
-              <label for="user-name" class="form__label text-control-block__label">Имя:</label>
-              <input type="text" id="user-name" class="text-control-block__control" name="user-name"
-                      placeholder="Введите ваше имя *" required>
+            <div class="container form__button-wrapper">
+              <button type="submit" class="button-alternative form__button-alternative">Отправить форму</button>
+
+              <small class="form__hint"><sup class="form__designation">*</sup> — обязательные поля</small>
             </div>
-
-            <div class="text-control-block">
-              <label for="user-patronymic" class="form__label text-control-block__label">Отчество:</label>
-              <input type="text" id="user-patronymic" class="text-control-block__control" name="user-patronymic"
-                      placeholder="Ну и отчество тоже">
-            </div>
-          </fieldset>
-
-          <fieldset class="form__field form__field--bg--darker">
-            <legend class="form__label">Ваши безбашенные достижения в путешествии</legend>
-
-            <ul class="form__list">
-              <li class="checkbox-block">
-                <label for="shark-selfie" class="checkbox-block__label">Сделал селфи с акулой</label>
-                <input type="checkbox" id="shark-selfie" class="checkbox-block__control" name="achievements"
-                        value="Сделал селфи с акулой">
-              </li>
-              <li class="checkbox-block">
-                <label for="sunburned" class="checkbox-block__label">Обгорел на пляже</label>
-                <input type="checkbox" id="sunburned" class="checkbox-block__control" name="achievements"
-                        value="Обгорел на пляже">
-              </li>
-              <li class="checkbox-block">
-                <label for="chuck" class="checkbox-block__label">Видел Чака Норриса</label>
-                <input type="checkbox" id="chuck" class="checkbox-block__control" name="achievements"
-                        value="Видел Чака Норриса">
-              </li>
-              <li class="checkbox-block">
-                <label for="souvenirs" class="checkbox-block__label">Накупил сувениров</label>
-                <input type="checkbox" id="souvenirs" class="checkbox-block__control" name="achievements"
-                        value="Накупил сувениров">
-              </li>
-              <li class="checkbox-block">
-                <label for="held-tower" class="checkbox-block__label">Удержал башню</label>
-                <input type="checkbox" id="held-tower" class="checkbox-block__control" name="achievements"
-                        value="Удержал башню">
-              </li>
-              <li class="checkbox-block">
-                <label for="rampage" class="checkbox-block__label">Разгромил отель</label>
-                <input type="checkbox" id="rampage" class="checkbox-block__control" name="achievements"
-                        value="Разгромил отель">
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="form__field">
-            <div class="text-control-block">
-              <label for="user-phone-number" class="form__label text-control-block__label">Номер телефона</label>
-              <input type="tel" id="user-phone-number" class="text-control-block__control" name="user-phone-number"
-                      placeholder="Номер, пожалуйста">
-            </div>
-
-            <div class="text-control-block">
-              <label for="user-email" class="form__label text-control-block__label">Адрес почты</label>
-              <input type="email" id="user-email" class="text-control-block__control" name="user-email"
-                      placeholder="Введите почту *" required>
-            </div>
-          </fieldset>
-
-          <fieldset class="form__field form__field--bg--darker">
-            <legend class="form__label">С каким приложением путешествовали?</legend>
-
-            <ul class="form__list">
-              <li class="radio-block">
-                <label for="app-ios" class="radio-block__label">Pink на iOS</label>
-                <input type="radio" id="app-ios" class="radio-block__control" name="app"
-                        value="Pink на iOS">
-              </li>
-              <li class="radio-block">
-                <label for="app-android" class="radio-block__label">Pink а Android</label>
-                <input type="radio" id="app-android" class="radio-block__control" name="app"
-                        value="Pink а Android">
-              </li>
-              <li class="radio-block">
-                <label for="app-windows" class="radio-block__label">Windows Phone</label>
-                <input type="radio" id="app-windows" class="radio-block__control" name="app"
-                        value="Pink на Windows Phone">
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="form__field">
-            <div class="text-control-block">
-              <label for="user-emotions" class="form__label">Опишите свои эмоции</label>
-              <textarea id="user-emotions" class="text-control-block__control" name="user-emotions"
-                        placeholder="Можно прям в красках, не стесняясь в выражениях" rows="6"></textarea>
-            </div>
-          </fieldset>
-
-          <button type="submit" class="button-alternative">Отправить форму</button>
-
-          <small class="form__hint"><sup class="form__designation">*</sup> — обязательные поля</small>
-        </form>
+          </form>
       </section>
 
       <div class="modal" role="dialog" id="success-send" tabindex="-1" aria-modal="true"

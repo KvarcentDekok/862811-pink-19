@@ -136,51 +136,66 @@
   <section class="reviews slider">
     <h2 class="visually-hidden">Отзывы</h2>
 
-    <ul class="slider__list">
-      <li class="slider__slide">
-        <blockquote class="reviews__item">
-          <cite class="reviews__author text text--bold text--black">Николай Петров</cite>
+    <div class="container reviews__container">
+      <ul class="slider__list">
+        <li class="slider__slide">
+          <blockquote class="reviews__item">
+            <cite class="reviews__author">
+              <span class="text text--bold text--black reviews__author-name">Николай Петров</span>
 
-          <p class="reviews__text text text--small">
-            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          </p>
-        </blockquote>
-      </li>
-    </ul>
+              <span class="text text--small reviews__author-info">25 лет, водитель трамвая</span>
+            </cite>
 
-    <ul class="slider__dots dots">
-      <li class="dots__item">
-        <button type="button" class="dots__button dots__button--active">
-          <span class="visually-hidden">1-й слайд</span>
-        </button>
-      </li>
-      <li class="dots__item">
-        <button type="button" class="dots__button dots__button--active">
-          <span class="visually-hidden">2-й слайд</span>
-        </button>
-      </li>
-      <li class="dots__item">
-        <button type="button" class="dots__button dots__button--active">
-          <span class="visually-hidden">3-й слайд</span>
-        </button>
-      </li>
-    </ul>
+            <p class="reviews__text text text--small">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </blockquote>
+        </li>
+      </ul>
+
+      <ul class="slider__dots reviews__dots dots">
+        <li class="dots__item">
+          <button type="button" class="dots__button dots__button--active">
+            <span class="visually-hidden">1-й слайд</span>
+          </button>
+        </li>
+        <li class="dots__item">
+          <button type="button" class="dots__button">
+            <span class="visually-hidden">2-й слайд</span>
+          </button>
+        </li>
+        <li class="dots__item">
+          <button type="button" class="dots__button">
+            <span class="visually-hidden">3-й слайд</span>
+          </button>
+        </li>
+      </ul>
+
+      <button type="button" class="slider__arrow slider__arrow--left">
+        <span class="visually-hidden">Предыдущий отзыв</span>
+      </button>
+
+      <button type="button" class="slider__arrow slider__arrow--right">
+        <span class="visually-hidden">Следующий отзыв</span>
+      </button>
+    </div>
   </section>
 
   <section class="tariffs slider">
     <h2 class="visually-hidden">Тарифы</h2>
 
-    <table class="tariffs__table slider__table table">
+    <table class="tariffs__table slider__table slider__table--active--2 table">
       <thead class="table__head">
-      <tr class="table__row">
-        <th class="table__cell tariffs__head-cell" colspan="2">
+      <tr class="table__row tariffs__head-row">
+        <td class="tariffs__empty"></td>
+        <th class="table__cell tariffs__head-cell">
           <p class="text text--bold text--white tariffs__name">База</p>
 
           <p class="text text--large text--light text--white tariffs__price">1,99 USD</p>
         </th>
 
-        <th class="table__cell tariffs__head-cell" colspan="2">
+        <th class="table__cell tariffs__head-cell">
           <p class="text text--bold text--white tariffs__name">Стандарт</p>
 
           <p class="text text--large text--light text--white tariffs__price">3,99 USD</p>
@@ -188,7 +203,7 @@
           <span class="tariffs__hit">Хит</span>
         </th>
 
-        <th class="table__cell tariffs__head-cell" colspan="2">
+        <th class="table__cell tariffs__head-cell">
           <p class="text text--bold text--white tariffs__name">Анлим</p>
 
           <p class="text text--large text--light text--white tariffs__price">9,99 USD</p>
@@ -198,88 +213,95 @@
 
       <tbody class="table__body">
       <tr class="table__row">
-        <td class="table__cell table__cell--united--left tariffs__option">Розовый фильтр</td>
+        <td class="table__cell tariffs__option">Розовый фильтр</td>
 
-        <td class="table__cell table__cell--united--right">
-          <p class="tariffs__availability tariffs__availability--type--available">
-            <span class="visually-hidden">Доступно</span>
-          </p>
+        <td class="table__cell tariffs__cell">
+          <div class="tariffs__wrapper" aria-label="Розовый фильтр">
+            <p class="tariffs__availability tariffs__availability--type--available">
+              <span class="visually-hidden">Доступно</span>
+            </p>
+          </div>
         </td>
 
-        <td class="table__cell table__cell--united--left tariffs__option">Розовый фильтр</td>
+        <td class="table__cell tariffs__cell">
+          <div class="tariffs__wrapper" aria-label="Розовый фильтр">
+            <p class="tariffs__availability tariffs__availability--type--available">
+              <span class="visually-hidden">Доступно</span>
+            </p>
+          </div>
 
-        <td class="table__cell table__cell--united--right">
-          <p class="tariffs__availability tariffs__availability--type--available">
-            <span class="visually-hidden">Доступно</span>
-          </p>
         </td>
 
-        <td class="table__cell table__cell--united--left tariffs__option">Розовый фильтр</td>
-
-        <td class="table__cell table__cell--united--right">
-          <p class="tariffs__availability tariffs__availability--type--available">
-            <span class="visually-hidden">Доступно</span>
-          </p>
-        </td>
-      </tr>
-
-      <tr class="table__row">
-        <td class="table__cell table__cell--united--left tariffs__option">Смайлики</td>
-
-        <td class="table__cell table__cell--united--right">
-          <p class="tariffs__availability tariffs__availability--type--unavailable">
-            <span class="visually-hidden">Недоступно</span>
-          </p>
-        </td>
-
-        <td class="table__cell table__cell--united--left tariffs__option">Смайлики</td>
-
-        <td class="table__cell table__cell--united--right">
-          <p class="tariffs__availability tariffs__availability--type--available">
-            <span class="visually-hidden">Доступно</span>
-          </p>
-        </td>
-
-        <td class="table__cell table__cell--united--left tariffs__option">Смайлики</td>
-
-        <td class="table__cell table__cell--united--right">
-          <p class="tariffs__availability tariffs__availability--type--available">
-            <span class="visually-hidden">Доступно</span>
-          </p>
+        <td class="table__cell tariffs__cell">
+          <div class="tariffs__wrapper" aria-label="Розовый фильтр">
+            <p class="tariffs__availability tariffs__availability--type--available">
+              <span class="visually-hidden">Доступно</span>
+            </p>
+          </div>
         </td>
       </tr>
 
       <tr class="table__row">
-        <td class="table__cell table__cell--united--left tariffs__option">Комментарии</td>
+        <td class="table__cell tariffs__option">Смайлики</td>
 
-        <td class="table__cell table__cell--united--right">
-          <p class="tariffs__availability tariffs__availability--type--unavailable">
-            <span class="visually-hidden">Недоступно</span>
-          </p>
+        <td class="table__cell tariffs__cell">
+          <div class="tariffs__wrapper" aria-label="Смайлики">
+            <p class="tariffs__availability tariffs__availability--type--unavailable">
+              <span class="visually-hidden">Недоступно</span>
+            </p>
+          </div>
         </td>
 
-        <td class="table__cell table__cell--united--left tariffs__option">Комментарии</td>
-
-        <td class="table__cell table__cell--united--right">
-          <p class="tariffs__availability tariffs__availability--type--unavailable">
-            <span class="visually-hidden">Недоступно</span>
-          </p>
+        <td class="table__cell tariffs__cell">
+          <div class="tariffs__wrapper" aria-label="Смайлики">
+            <p class="tariffs__availability tariffs__availability--type--available">
+              <span class="visually-hidden">Доступно</span>
+            </p>
+          </div>
         </td>
 
-        <td class="table__cell table__cell--united--left tariffs__option">Комментарии</td>
+        <td class="table__cell tariffs__cell">
+          <div class="tariffs__wrapper" aria-label="Смайлики">
+            <p class="tariffs__availability tariffs__availability--type--available">
+              <span class="visually-hidden">Доступно</span>
+            </p>
+          </div>
+        </td>
+      </tr>
 
-        <td class="table__cell table__cell--united--right">
-          <p class="tariffs__availability tariffs__availability--type--available">
-            <span class="visually-hidden">Доступно</span>
-          </p>
+      <tr class="table__row">
+        <td class="table__cell tariffs__option">Комментарии</td>
+
+        <td class="table__cell tariffs__cell">
+          <div class="tariffs__wrapper" aria-label="Комментарии">
+            <p class="tariffs__availability tariffs__availability--type--unavailable">
+              <span class="visually-hidden">Недоступно</span>
+            </p>
+          </div>
+        </td>
+
+        <td class="table__cell tariffs__cell">
+          <div class="tariffs__wrapper" aria-label="Комментарии">
+            <p class="tariffs__availability tariffs__availability--type--unavailable">
+              <span class="visually-hidden">Недоступно</span>
+            </p>
+          </div>
+        </td>
+
+        <td class="table__cell tariffs__cell" aria-label="Комментарии">
+          <div class="tariffs__wrapper" aria-label="Комментарии">
+            <p class="tariffs__availability tariffs__availability--type--available">
+              <span class="visually-hidden">Доступно</span>
+            </p>
+          </div>
         </td>
       </tr>
       </tbody>
     </table>
 
-    <ul class="slider__dots dots">
+    <ul class="slider__dots tariffs__dots dots">
       <li class="dots__item">
-        <button type="button" class="dots__button dots__button--active">
+        <button type="button" class="dots__button">
           <span class="visually-hidden">1-й слайд</span>
         </button>
       </li>
@@ -289,7 +311,7 @@
         </button>
       </li>
       <li class="dots__item">
-        <button type="button" class="dots__button dots__button--active">
+        <button type="button" class="dots__button">
           <span class="visually-hidden">3-й слайд</span>
         </button>
       </li>
@@ -297,31 +319,41 @@
   </section>
 
   <section class="page-contacts">
-    <h2 class="text text--large text--normal text--light">Остались вопросы? Свяжитесь с нами!</h2>
+    <div class="container">
+      <h2 class="text text--large text--normal text--light page-contacts__title">
+        Остались вопросы? <br> Свяжитесь с нами!
+      </h2>
 
-    <dl class="contacts">
-      <dt class="contacts__title text text--bold">Звоните:</dt>
+      <dl class="contacts">
+        <div class="contacts__wrapper">
+          <dt class="contacts__title text text--bold">Звоните:</dt>
 
-      <dd class="contacts__item">
-        <a href="tel:+78125556666" class="page-contacts__link text text--large text--light">+7 (812) 555-66-66</a>
-      </dd>
+          <dd class="contacts__item">
+            <a href="tel:+78125556666" class="page-contacts__link text text--large text--light">+7 (812) 555-66-66</a>
+          </dd>
+        </div>
 
-      <dt class="contacts__title text text--bold">Пишите:</dt>
+        <div class="contacts__wrapper">
+          <dt class="contacts__title text text--bold">Пишите:</dt>
 
-      <dd class="contacts__item">
-        <a href="mailto:mail@htmlacademy.ru" class="page-contacts__link text text--large text--light">
-          mail@htmlacademy.ru
-        </a>
-      </dd>
+          <dd class="contacts__item">
+            <a href="mailto:mail@htmlacademy.ru" class="page-contacts__link text text--large text--light">
+              mail@htmlacademy.ru
+            </a>
+          </dd>
+        </div>
 
-      <dt class="contacts__title text text--bold">Приезжайте в гости:</dt>
+        <div class="contacts__wrapper">
+          <dt class="contacts__title text text--bold">Приезжайте в гости:</dt>
 
-      <dd class="contacts__item">
-        <a href="https://goo.gl/maps/6Stf7RPQL21ZZ1EV8" class="page-contacts__link text text--large text--light">
-          ул. Большая Конюшенная, 19/8
-        </a>
-      </dd>
-    </dl>
+          <dd class="contacts__item">
+            <a href="https://goo.gl/maps/6Stf7RPQL21ZZ1EV8" class="page-contacts__link text text--large text--light">
+              ул. Большая Конюшенная, 19/8
+            </a>
+          </dd>
+        </div>
+      </dl>
+    </div>
 
     <div class="page-contacts__map-wrapper">
       <iframe

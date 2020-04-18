@@ -1,0 +1,19 @@
+.radio-block {
+  .check-block-style();
+}
+
+.radio-block__control {
+  .check-control-style();
+}
+
+.radio-block__control:checked ~ .radio-block__label::before {
+  background: radial-gradient(circle at center, #d22856 33%, #ffffff 38%);
+}
+
+.radio-block__label {
+  .check-label-style();
+
+  &::before {
+    border-radius: 50%;
+  }
+}
