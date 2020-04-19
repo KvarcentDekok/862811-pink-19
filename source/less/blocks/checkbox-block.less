@@ -1,0 +1,19 @@
+.checkbox-block {
+  .check-block-style();
+}
+
+.checkbox-block__control {
+  .check-control-style();
+}
+
+.checkbox-block__control:checked ~ .checkbox-block__label::before {
+  background: #ffffff url("../img/icon-tick.svg") no-repeat center;
+}
+
+.checkbox-block__control:focus ~ .checkbox-block__label::before {
+  outline: 2px solid rgb(125, 173, 217);
+}
+
+.checkbox-block__label {
+  .check-label-style();
+}

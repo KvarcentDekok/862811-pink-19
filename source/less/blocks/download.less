@@ -13,6 +13,20 @@
   color: #ffffff;
 
   border-color: #ffffff;
+
+  &:hover,
+  &:active {
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+
+  &:hover {
+    color: @main-color;
+  }
+
+  &:active {
+    color: fade(@main-color, 30%);
+  }
 }
 
 @media (min-width: @tablet-width) {

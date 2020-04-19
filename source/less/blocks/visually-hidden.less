@@ -1,11 +1,11 @@
 .visually-hidden {
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  width: 1px;
-  height: 1px;
-  margin: 0;
-  padding: 0;
+  .visually-hidden-style();
+}
 
-  overflow: hidden;
-  white-space: nowrap;
+@media (min-width: @tablet-width) {
+  .visually-hidden {
+    &--mobile {
+      .visually-hidden-reset();
+    }
+  }
 }
