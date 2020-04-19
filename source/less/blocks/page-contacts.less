@@ -9,6 +9,16 @@
 .page-contacts__link {
   color: @main-color;
   text-decoration: none;
+
+  &:hover {
+    color: @text-color;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: fade(@text-color, 30%);
+    text-decoration: none;
+  }
 }
 
 .page-contacts__map-wrapper {

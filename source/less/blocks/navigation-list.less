@@ -17,11 +17,21 @@
   margin: 0;
   padding: 20px 0;
 
+  position: relative;
+
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+
+  &:hover {
+    color: @main-color;
+  }
+
+  &:active {
+    color: fade(@main-color, 30%);
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -38,5 +48,25 @@
     padding: 43px 40px;
     font-weight: normal;
     text-transform: none;
+
+    &:active {
+      color: fade(#ffffff, 30%);
+    }
+
+    &--active {
+      &::after {
+        width: calc(100% - 80px);
+        height: 2px;
+
+        position: absolute;
+        top: calc(50% + 22px);
+        left: 50%;
+
+        content: "";
+
+        background-color: #ffffff;
+        transform: translateX(-50%);
+      }
+    }
   }
 }

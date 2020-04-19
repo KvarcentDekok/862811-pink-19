@@ -32,21 +32,45 @@
 .photo-form__button {
   width: 100%;
 
-  &--type {
-    &--submit {
-      margin-top: 38px;
+  &--type--submit {
+    margin-top: 38px;
 
-      color: @main-color;
+    color: @main-color;
 
-      border-color: @main-color;
+    border-color: @main-color;
+
+    &:hover,
+    &:active {
+      background-color: @main-color;
     }
 
-    &--reset {
-      margin-top: 12px;
+    &:hover {
+      color: #ffffff;
+    }
 
-      color: fade(@text-color, 10%);
+    &:active {
+      color: fade(#ffffff, 30%);
+    }
+  }
 
-      border-color: fade(@text-color, 10%);
+  &--type--reset {
+    margin-top: 12px;
+
+    color: fade(@text-color, 10%);
+
+    border-color: fade(@text-color, 10%);
+
+    &:hover {
+      color: fade(@text-color, 30%);
+
+      border-color: fade(@text-color, 30%);
+    }
+
+    &:active {
+      color: #ffffff;
+
+      background-color: fade(@text-color, 30%);
+      border-color: transparent;
     }
   }
 }

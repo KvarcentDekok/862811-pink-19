@@ -20,6 +20,14 @@
   border-radius: 50%;
   cursor: pointer;
 
+  &:hover:not(.dots__button--active) {
+    background-color: fade(@text-color, 60%);
+  }
+
+  &:active:not(.dots__button--active) {
+    background-color: fade(@text-color, 10%);
+  }
+
   &--active {
     background-color: #ffffff;
     box-shadow: 0 0 0 3px @text-color;

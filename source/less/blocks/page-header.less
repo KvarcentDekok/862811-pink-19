@@ -15,15 +15,16 @@
   padding: 22px 0 18px;
 }
 
-.page-header__toggle {
-  display: block;
-  width: 24px;
-  border: none;
+.page-header__logo {
+  color: #ffffff;
 
-  position: relative;
+  &:hover {
+    color: @main-color;
+  }
 
-  cursor: pointer;
-  background: transparent url("../img/icon-menu-cross.svg") no-repeat center;
+  &:active {
+    color: fade(#ffffff, 30%);
+  }
 }
 
 @media (min-width: @desktop-width) {

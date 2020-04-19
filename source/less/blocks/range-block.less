@@ -10,10 +10,14 @@
   width: 48px;
   height: 48px;
 
+  color: fade(@text-color, 30%);
+
+  &:hover:not(.range-block__label--active) {
+    color: fade(@text-color, 60%);
+  }
+
   &--active {
-    .range-block__color {
-      fill: @main-color;
-    }
+    color: @main-color;
   }
 }
 
@@ -31,10 +35,6 @@
 
   appearance: none;
   background-color: transparent;
-
-  &--show {
-    display: block;
-  }
 
   &::-webkit-slider-runnable-track {
     width: 100%;
@@ -108,6 +108,22 @@
     background-color: #ffffff;
     cursor: pointer;
     transition: box-shadow 200ms;
+  }
+
+  &--show {
+    display: block;
+
+    &::-webkit-slider-thumb {
+      background-color: @main-color;
+    }
+
+    &::-moz-range-thumb {
+      background-color: @main-color;
+    }
+
+    &::-ms-thumb {
+      background-color: @main-color;
+    }
   }
 }
 

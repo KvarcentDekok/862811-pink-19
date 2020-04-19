@@ -39,20 +39,26 @@
     position: absolute;
     top: 50%;
 
+    color: fade(@text-color, 30%);
+
+    background-color: transparent;
     transform: translateY(-50%);
     cursor: pointer;
-    opacity: 0.3;
+
+    &:hover {
+      color: fade(@text-color, 60%);
+    }
+
+    &:active {
+      color: fade(@text-color, 10%);
+    }
 
     &--left {
       left: 10px;
-
-      background: transparent url("../img/icon-review-arrow-left.svg") no-repeat center;
     }
 
     &--right {
       right: 10px;
-
-      background: transparent url("../img/icon-review-arrow-right.svg") no-repeat center;
     }
   }
 }

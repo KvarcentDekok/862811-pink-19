@@ -80,6 +80,7 @@
 
 .tariffs__option {
   display: none;
+  margin: 0;
 
   font-size: 14px;
   line-height: 30px;
@@ -91,12 +92,8 @@
   display: flex;
   justify-content: space-between;
 
-  &::before {
-    content: attr(aria-label);
-    font-size: 14px;
-    line-height: 30px;
-    white-space: nowrap;
-    text-transform: uppercase;
+  .tariffs__option {
+    display: block;
   }
 }
 
@@ -162,8 +159,8 @@
   .tariffs__wrapper {
     justify-content: center;
 
-    &::before {
-      content: none;
+    .tariffs__option {
+      display: none;
     }
   }
 

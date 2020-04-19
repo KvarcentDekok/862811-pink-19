@@ -5,10 +5,19 @@
 }
 
 .copyright__link {
-  display: block;
+  display: flex;
+  align-items: center;
   width: 27px;
   height: 34px;
   margin-left: 15px;
 
-  background: url("../img/htmlacademy.svg") no-repeat center;
+  color: @main-color;
+
+  &:hover {
+    color: @text-color;
+  }
+
+  &:active {
+    color: fade(@text-color, 30%);
+  }
 }

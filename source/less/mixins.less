@@ -70,4 +70,17 @@
 
     background-color: #ffffff;
   }
+
+  &:hover {
+    &::before {
+      border-color: @text-color;
+    }
+
+  }
+
+  &:active {
+    &::before {
+      border-color: @main-color;
+    }
+  }
 }
