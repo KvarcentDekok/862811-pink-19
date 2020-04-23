@@ -27,13 +27,20 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .page-header__logo,
+  .page-header__toggle {
+    padding: 45px 0 36px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .page-header {
     width: 100%;
 
     position: absolute;
 
-    background-color: fade(#000000, 20%);
+    background-color: fade(#000000, 30%);
   }
 
   .page-header__toggle {
@@ -42,5 +49,6 @@
 
   .page-header__logo {
     padding: 27px 0 43px;
+    min-width: 150px;
   }
 }

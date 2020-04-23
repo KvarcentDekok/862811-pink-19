@@ -1,12 +1,13 @@
 .comment {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   margin: 0;
-
+  padding: 17px 12px 17px 17px;
   position: relative;
+
+  background-color: #f2f2f2;
 }
 
 .comment__date {
@@ -16,6 +17,7 @@
 
 .comment__content {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .comment__likes {
@@ -32,13 +34,18 @@
   width: 13px;
   height: 12px;
   border: none;
-  margin-right: 19px;
+  margin-right: 16px;
 
   background: transparent url("../img/icon-heart.svg") no-repeat center;
   cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
+  .comment {
+    padding: 21px 29px 21px 27px;
+    min-height: 152px;
+  }
+
   .comment__likes {
     display: flex;
     align-items: center;
