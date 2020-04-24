@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 40px 0;
+  padding: 43px 0;
 
   &--index {
     display: none;
@@ -30,6 +30,8 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
+    padding-top: 37px;
+
     &--index {
       display: block;
     }
@@ -37,5 +39,16 @@
 
   .page-footer__container {
     flex-direction: row;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    padding-top: 102px;
   }
 }

@@ -1,5 +1,8 @@
 .slider__list {
   .list-reset();
+
+  display: flex;
+  justify-content: center;
 }
 
 .slider__dots {
@@ -28,6 +31,12 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .slider__slide {
+    max-width: @tablet-width;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .slider__arrow {
     display: block;
@@ -39,18 +48,18 @@
     position: absolute;
     top: 50%;
 
-    color: fade(@text-color, 30%);
+    color: rgba(@text-color, 30%);
 
     background-color: transparent;
     transform: translateY(-50%);
     cursor: pointer;
 
     &:hover {
-      color: fade(@text-color, 60%);
+      color: rgba(@text-color, 60%);
     }
 
     &:active {
-      color: fade(@text-color, 10%);
+      color: rgba(@text-color, 10%);
     }
 
     &--left {

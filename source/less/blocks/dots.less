@@ -16,16 +16,16 @@
   width: 6px;
   height: 6px;
 
-  background-color: fade(@text-color, 30%);
+  background-color: rgba(@text-color, 30%);
   border-radius: 50%;
   cursor: pointer;
 
   &:hover:not(.dots__button--active) {
-    background-color: fade(@text-color, 60%);
+    background-color: rgba(@text-color, 60%);
   }
 
   &:active:not(.dots__button--active) {
-    background-color: fade(@text-color, 10%);
+    background-color: rgba(@text-color, 10%);
   }
 
   &--active {

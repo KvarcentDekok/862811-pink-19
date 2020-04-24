@@ -1,6 +1,6 @@
 .range-block {
   margin: 0 16px;
-  padding-bottom: 71px;
+  padding-bottom: 74px;
 }
 
 .range-block__label {
@@ -10,10 +10,10 @@
   width: 48px;
   height: 48px;
 
-  color: fade(@text-color, 30%);
+  color: rgba(@text-color, 30%);
 
   &:hover:not(.range-block__label--active) {
-    color: fade(@text-color, 60%);
+    color: rgba(@text-color, 60%);
   }
 
   &--active {
@@ -22,7 +22,7 @@
 }
 
 .range-block__color {
-  fill: fade(@text-color, 30%);
+  fill: rgba(@text-color, 30%);
 }
 
 .range-block__control {
@@ -31,7 +31,7 @@
 
   position: absolute;
   left: 20px;
-  bottom: 28px;
+  bottom: 35px;
 
   appearance: none;
   background-color: transparent;
@@ -112,7 +112,9 @@
 
   &--show {
     display: block;
+  }
 
+  &:active {
     &::-webkit-slider-thumb {
       background-color: @main-color;
     }
@@ -131,9 +133,10 @@
   .range-block {
     display: flex;
     width: 100%;
-    border-bottom: 1px solid fade(@text-color, 10%);
-    padding-bottom: 22px;
-    margin-bottom: 22px;
+    border-bottom: 1px solid rgba(@text-color, 10%);
+    padding-bottom: 24px;
+    padding-right: 18px;
+    margin-bottom: 24px;
     margin-right: 0;
     margin-left: 0;
   }
@@ -142,6 +145,14 @@
     width: 24px;
     height: 24px;
     margin-right: 28px;
+
+    color: @main-color;
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
+      margin-left: 5px;
+    }
   }
 
   .range-block__control {
@@ -155,12 +166,16 @@
 @media (min-width: @desktop-width) {
   .range-block {
     padding-bottom: 11px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 
   .range-block__label {
     width: 48px;
     height: 48px;
     margin-right: 44px;
+
+    &--contrast {
+      margin-left: 0;
+    }
   }
 }

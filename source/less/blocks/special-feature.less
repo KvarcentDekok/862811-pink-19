@@ -20,7 +20,7 @@
 
       position: absolute;
       top: 18px;
-      left: 38px;
+      right: calc(50% + 90px);
       z-index: 1;
 
       content: "24";
@@ -39,7 +39,7 @@
 
       position: absolute;
       top: -37px;
-      left: 20px;
+      right: calc(50% + 72px);
       z-index: 0;
 
       content: "";
@@ -53,7 +53,6 @@
     margin-top: 43px;
     margin-bottom: 10px;
 
-    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
@@ -67,6 +66,16 @@
     font-size: 14px;
     line-height: 36px;
     color: @main-color;
+
+    &:hover {
+      color: @text-color;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: rgba(@text-color, 30%);
+      text-decoration: none;
+    }
   }
 
   .special-feature__text {
