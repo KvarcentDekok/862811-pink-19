@@ -32,12 +32,10 @@
 }
 
 .intro__phone-demo {
+  display: block;
+
   position: relative;
   left: -30px;
-
-  img {
-    display: block;
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -55,6 +53,7 @@
 
   .intro__container {
     align-items: flex-start;
+
     padding-bottom: 92px;
   }
 
@@ -83,15 +82,15 @@
   }
 
   .intro__phone-demo {
+    width: auto;
+    max-width: none;
+    height: 545px;
+
     position: absolute;
-    right: 20px;
+    top: -19px;
+    right: -117px;
     left: auto;
     z-index: 0;
-
-    img {
-      width: 444px;
-      height: 545px;
-    }
   }
 }
 
@@ -119,6 +118,9 @@
     &--index {
       width: 300px;
       margin-bottom: 52px;
+
+      font-size: 48px;
+      line-height: 60px;
     }
   }
 
@@ -127,8 +129,11 @@
   }
 
   .intro__phone-demo {
+    height: 644px;
+
     right: auto;
-    left: 350px;
+    left: 27px;
+    top: auto;
     bottom: 0;
   }
 }

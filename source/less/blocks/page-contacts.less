@@ -37,7 +37,7 @@
 
     content: "";
 
-    background: url("../img/bg-triangle-white-footer.svg") no-repeat center;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat top center;
     background-size: cover;
     pointer-events: none;
   }
@@ -73,19 +73,33 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-contacts {
+    padding-top: 108px;
+  }
+
   .page-contacts__container {
     max-width: none;
     margin-left: 0;
     margin-right: 0;
   }
 
+  .page-contacts__contacts {
+    margin-bottom: 0;
+  }
+
+  .page-contacts__title {
+    margin-bottom: 56px;
+  }
+
   .page-contacts__map-wrapper {
     &::before {
-      height: 11vw;
+      height: 100%;
+
+      background-size: contain;
     }
   }
 
   .page-contacts__map {
-    height: 522px;
+    height: 500px;
   }
 }
