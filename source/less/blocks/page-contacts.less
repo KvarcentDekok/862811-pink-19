@@ -1,9 +1,13 @@
 .page-contacts {
-  padding-top: 42px;
+  padding-top: 44px;
 }
 
 .page-contacts__title {
   text-align: center;
+}
+
+.page-contacts__contacts {
+  margin-top: 33px;
 }
 
 .page-contacts__link {
@@ -16,7 +20,7 @@
   }
 
   &:active {
-    color: fade(@text-color, 30%);
+    color: rgba(@text-color, 30%);
     text-decoration: none;
   }
 }
@@ -26,14 +30,14 @@
 
   &::before {
     width: 100%;
-    height: 62px;
+    height: 47px;
 
     position: absolute;
     top: 0;
 
     content: "";
 
-    background: url("../img/bg-triangle-white-footer.svg") no-repeat center;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat top center;
     background-size: cover;
     pointer-events: none;
   }
@@ -45,6 +49,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-contacts__container {
+    max-width: @tablet-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .page-contacts__link {
     font-size: 24px;
     line-height: 29px;
@@ -63,13 +73,33 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-contacts {
+    padding-top: 108px;
+  }
+
+  .page-contacts__container {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .page-contacts__contacts {
+    margin-bottom: 0;
+  }
+
+  .page-contacts__title {
+    margin-bottom: 56px;
+  }
+
   .page-contacts__map-wrapper {
     &::before {
-      height: 11vw;
+      height: 100%;
+
+      background-size: contain;
     }
   }
 
   .page-contacts__map {
-    height: 522px;
+    height: 500px;
   }
 }

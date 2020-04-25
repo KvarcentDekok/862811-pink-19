@@ -18,6 +18,12 @@
   }
 
   &:active {
-    color: fade(@text-color, 30%);
+    color: rgba(@text-color, 30%);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    margin-bottom: 0;
   }
 }

@@ -1,0 +1,38 @@
+.logo__glasses {
+  display: none;
+}
+
+.logo__text {
+  transform: translate(-72px, -17px);
+}
+
+@media (min-width: @tablet-width) {
+  .logo {
+    svg {
+      width: 146px;
+      height: 40px;
+    }
+  }
+
+  .logo__glasses {
+    display: initial;
+
+    &--stars {
+      display: none;
+    }
+  }
+
+  .logo__text {
+    transform: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo__glasses {
+    display: none;
+
+    &--stars {
+      display: initial;
+    }
+  }
+}

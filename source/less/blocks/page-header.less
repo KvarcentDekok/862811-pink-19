@@ -23,7 +23,17 @@
   }
 
   &:active {
-    color: fade(#ffffff, 30%);
+    color: rgba(#ffffff, 30%);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    padding: 28px 0 36px;
+  }
+
+  .page-header__toggle {
+    padding: 44px 0 36px;
   }
 }
 
@@ -33,7 +43,7 @@
 
     position: absolute;
 
-    background-color: fade(#000000, 20%);
+    background-color: rgba(#000000, 30%);
   }
 
   .page-header__toggle {
@@ -42,5 +52,6 @@
 
   .page-header__logo {
     padding: 27px 0 43px;
+    min-width: 150px;
   }
 }

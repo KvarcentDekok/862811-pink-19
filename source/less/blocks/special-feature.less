@@ -5,7 +5,7 @@
 @media (min-width: @tablet-width) {
   .special-feature {
     display: block;
-    padding: 59px 0 52px;
+    padding: 50px 0 52px;
 
     background-color: #ffffff;
   }
@@ -19,14 +19,14 @@
       border: 13px solid @main-color;
 
       position: absolute;
-      top: 0;
-      left: 38px;
+      top: 18px;
+      right: calc(50% + 90px);
       z-index: 1;
 
       content: "24";
       font-weight: bold;
       font-size: 96px;
-      line-height: 176px;
+      line-height: 167px;
       color: @main-color;
       text-align: center;
 
@@ -38,8 +38,8 @@
       height: 276px;
 
       position: absolute;
-      top: -55px;
-      left: 20px;
+      top: -37px;
+      right: calc(50% + 72px);
       z-index: 0;
 
       content: "";
@@ -51,8 +51,8 @@
 
   .special-feature__title {
     margin-top: 43px;
+    margin-bottom: 10px;
 
-    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
@@ -66,6 +66,20 @@
     font-size: 14px;
     line-height: 36px;
     color: @main-color;
+
+    &:hover {
+      color: @text-color;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: rgba(@text-color, 30%);
+      text-decoration: none;
+    }
+  }
+
+  .special-feature__text {
+    margin-bottom: 4px;
   }
 
   .special-feature__text,
@@ -78,7 +92,8 @@
 
 @media (min-width: @desktop-width) {
   .special-feature {
-    padding-bottom: 90px;
+    padding-top: 52px;
+    padding-bottom: 112px;
 
     background-color: #f2f2f2;
   }
@@ -89,25 +104,32 @@
       height: 253px;
       border-width: 16px;
 
+      top: -22px;
       left: 32px;
 
       font-size: 120px;
-      line-height: 221px;
+      line-height: 208px;
     }
 
     &::after {
       width: 298px;
       height: 345px;
 
-      top: -69px;
+      top: -91px;
       left: 10px;
     }
   }
 
   .special-feature__title {
+    margin-bottom: 21px;
+
     br {
       display: none;
     }
+  }
+
+  .special-feature__text {
+    margin-bottom: 31px;
   }
 
   .special-feature__link {

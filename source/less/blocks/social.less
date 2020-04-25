@@ -2,17 +2,17 @@
   .list-reset();
 
   display: flex;
-  margin: 42px 0;
+  margin: 37px 0;
 }
 
 .social__item {
-  margin: 0 9px;
+  margin: 0 14px 0 0;
 }
 
 .social__link {
   display: block;
-  width: 45px;
-  height: 45px;
+  width: 49px;
+  height: 49px;
   border: 3px solid #e8e9eb;
 
   border-radius: 50%;
@@ -35,5 +35,17 @@
 
   &:active {
     opacity: 0.1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    margin-left: 32px;
   }
 }
