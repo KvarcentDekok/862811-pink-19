@@ -1,5 +1,5 @@
 .text-control-block {
-  margin-bottom: 18px;
+  margin-bottom: 24px;
 
   position: relative;
 
@@ -9,7 +9,7 @@
 }
 
 .text-control-block__label {
-  margin-bottom: 9px;
+  margin-bottom: 11px;
 
   text-align: left;
   padding-left: 22px;
@@ -22,12 +22,21 @@
 
   resize: vertical;
 
+  &--area {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
   &:hover {
     border-color: @text-color;
   }
 
   &:active {
     border-color: @main-color;
+  }
+
+  &::placeholder {
+    line-height: 30px;
   }
 }
 
@@ -51,10 +60,16 @@
       margin-bottom: 35px;
 
       .text-control-block__label {
-        margin-top: 15px;
+        margin-top: 18px;
         margin-bottom: 0;
+        padding-left: 19px;
       }
     }
+  }
+
+  .text-control-block__label {
+    margin-bottom: 0;
+    padding-right: 3px;
   }
 
   .text-control-block__label--icon {
@@ -88,11 +103,21 @@
     &--icon {
       padding-right: 60px;
     }
+
+    &--area {
+      margin-bottom: 14px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .text-control-block {
     margin-bottom: 54px;
+  }
+
+  .text-control-block__control {
+    &--area {
+      max-height: 134px;
+    }
   }
 }
