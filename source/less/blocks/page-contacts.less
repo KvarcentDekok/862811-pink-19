@@ -44,6 +44,7 @@
 }
 
 .page-contacts__map {
+  display: block;
   width: 100%;
   border: none;
 }
@@ -55,6 +56,10 @@
     margin-left: auto;
   }
 
+  .page-contacts__title {
+    margin-bottom: 44px;
+  }
+
   .page-contacts__link {
     font-size: 24px;
     line-height: 29px;
@@ -62,19 +67,20 @@
 
   .page-contacts__map-wrapper {
     &::before {
-      height: 123px;
-      background-size: cover;
+      height: 100%;
+
+      background-size: contain;
     }
   }
 
   .page-contacts__map {
-    height: 415px;
+    height: 373px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-contacts {
-    padding-top: 108px;
+    padding-top: 65px;
   }
 
   .page-contacts__container {
@@ -91,15 +97,7 @@
     margin-bottom: 56px;
   }
 
-  .page-contacts__map-wrapper {
-    &::before {
-      height: 100%;
-
-      background-size: contain;
-    }
-  }
-
   .page-contacts__map {
-    height: 500px;
+    height: 505px;
   }
 }
