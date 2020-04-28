@@ -52,7 +52,7 @@
     max-width: 240px;
 
     &::before {
-      width: 276px;
+      width: 287px;
       height: 300px;
 
       position: absolute;
@@ -67,18 +67,33 @@
     &--iphone--1 {
       &::before {
         background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat center;
+
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+          background: url("../img/iphone-screen-1-desktop@2x.png") no-repeat center;
+          background-size: 100%;
+        }
       }
     }
 
     &--iphone--2 {
       &::before {
         background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat center;
+
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+          background: url("../img/iphone-screen-2-desktop@2x.png") no-repeat center;
+          background-size: 100%;
+        }
       }
     }
 
     &--iphone--3 {
       &::before {
         background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat center;
+
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+          background: url("../img/iphone-screen-3-desktop@2x.png") no-repeat center;
+          background-size: 100%;
+        }
       }
     }
   }
