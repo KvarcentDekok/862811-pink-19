@@ -2,9 +2,10 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="css/style.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
 
   <title>Фотографии пользователей</title>
 </head>
@@ -19,7 +20,7 @@
       </svg>
     </a>
 
-    <button type="button" class="page-header__toggle toggle">
+    <button type="button" class="page-header__toggle toggle" aria-controls="main-navigation" aria-expanded="true">
       <svg x="0" y="0" width="49.945" height="24.007">
         <use xlink:href="img/sprite.svg#toggle-burger" class="toggle__burger"></use>
         <use xlink:href="img/sprite.svg#toggle-cross" class="toggle__cross"></use>
@@ -28,7 +29,7 @@
       <span class="visually-hidden">Развернуть/свернуть меню</span>
     </button>
 
-    <nav class="main-navigation">
+    <nav class="main-navigation" id="main-navigation">
       <ul class="main-navigation__navigation-list navigation-list">
         <li class="navigation-list__item">
           <a href="index.html" class="navigation-list__link">Главная</a>
@@ -482,5 +483,7 @@
     </p>
   </div>
 </footer>
+
+<script type="module" src="js/app.js"></script>
 </body>
 </html>

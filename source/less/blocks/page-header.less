@@ -1,7 +1,55 @@
 .page-header {
+  width: 100%;
+
   z-index: 100;
 
   background-color: #283645;
+
+  &--minimized {
+    position: absolute;
+
+    background-color: rgba(#000000, 30%);
+
+    .toggle {
+      display: block;
+    }
+
+    .toggle__burger {
+      display: initial;
+    }
+
+    .toggle__cross {
+      display: none;
+    }
+
+    .main-navigation {
+      height: 0;
+
+      visibility: hidden;
+    }
+  }
+
+  &--expanded {
+    position: absolute;
+
+    background-color: #283645;
+
+    .toggle {
+      display: block;
+    }
+
+    .toggle__burger {
+      display: none;
+    }
+
+    .toggle__cross {
+      display: initial;
+    }
+
+    .main-navigation {
+      visibility: visible;
+    }
+  }
 }
 
 .page-header__container {
@@ -39,11 +87,20 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    width: 100%;
-
     position: absolute;
 
     background-color: rgba(#000000, 30%);
+
+    &--minimized,
+    &--expanded {
+      .toggle {
+        display: none;
+      }
+
+      .main-navigation {
+        visibility: visible;
+      }
+    }
   }
 
   .page-header__toggle {
