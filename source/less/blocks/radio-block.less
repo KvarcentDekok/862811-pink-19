@@ -16,6 +16,14 @@
   box-shadow: 0 0 0 2px rgb(125, 173, 217);
 }
 
+.radio-block__control:disabled ~ .radio-block__label {
+  color: #e5e5e5;
+
+  &::before {
+    border-color: #e5e5e5;
+  }
+}
+
 .radio-block__label {
   .check-label-style();
 

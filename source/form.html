@@ -11,6 +11,7 @@
   </head>
   <body>
   <header class="page-header">
+    <!-- .page-header--minimized - свёрнутое соостояние; .page-header--expanded - развёрнутое состояние -->
     <div class="container page-header__container">
       <a href="index.html" class="page-header__logo logo">
         <svg x="0" y="0" width="146" height="40" class="logo__svg">
@@ -29,7 +30,7 @@
         <span class="visually-hidden">Развернуть/свернуть меню</span>
       </button>
 
-      <nav class="main-navigation">
+      <nav class="main-navigation"  id="main-navigation">
         <ul class="main-navigation__navigation-list navigation-list">
           <li class="navigation-list__item">
             <a href="index.html" class="navigation-list__link">Главная</a>
@@ -54,7 +55,7 @@
       <div class="intro">
         <div class="container">
           <h1 class="text text--large text--light text--white text--normal intro__text">
-            Конкурс на самое безбашенное <br> путешествие с Пинк
+            Конкурс на самое безбашенное &#32;<br> путешествие с Пинк
           </h1>
         </div>
       </div>
@@ -292,6 +293,14 @@
       </div>
     </footer>
 
+  <script src="libs/svg4everybody/dist/svg4everybody.min.js"></script>
+  <script src="libs/picturefill/dist/picturefill.min.js"></script>
+
+  <script>
+    svg4everybody();
+  </script>
+
   <script type="module" src="js/app.js"></script>
+  <script nomodule src="js/app.nomodule.js"></script>
   </body>
 </html>

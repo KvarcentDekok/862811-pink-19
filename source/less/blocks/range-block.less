@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 48px;
   height: 48px;
 
@@ -28,6 +29,7 @@
 .range-block__control {
   display: none;
   width: 240px;
+  padding: 0;
 
   position: absolute;
   left: 20px;
@@ -129,9 +131,18 @@
   }
 }
 
+@supports (-ms-ime-align:auto) { // for Edge
+  .range-block__control {
+    &::-webkit-slider-thumb {
+      margin-top: 0;
+    }
+  }
+}
+
 @media (min-width: @tablet-width) {
   .range-block {
     display: flex;
+    align-items: center;
     width: 100%;
     border-bottom: 1px solid rgba(@text-color, 10%);
     padding-bottom: 24px;
@@ -153,13 +164,17 @@
       height: 16px;
       margin-left: 5px;
     }
+
+    &:hover {
+      color: rgba(@text-color, 60%);
+    }
   }
 
   .range-block__control {
     display: block;
     flex-grow: 1;
 
-    position: initial;
+    position: static;
   }
 }
 

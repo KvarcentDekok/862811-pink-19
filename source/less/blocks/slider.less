@@ -31,9 +31,28 @@
   }
 }
 
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {  // for IE
+  .slider__table {
+    &--active {
+      &--1 {
+        transform: translateX(100vw / 2) translateX(-100% / 3 / 2);
+      }
+
+      &--2 {
+        transform: translateX(100vw / 2) translateX(-100% / 3 / 2) translateX(-100% / 3);
+      }
+
+      &--3 {
+        transform: translateX(100vw / 2) translateX(-100% / 3 / 2) translateX(-100% / 3 * 2);
+      }
+    }
+  }
+}
+
 @media (min-width: @tablet-width) {
   .slider__slide {
     max-width: @tablet-width;
+    width: 100%;
   }
 
   .slider__dots {

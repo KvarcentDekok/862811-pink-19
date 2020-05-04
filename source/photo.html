@@ -11,6 +11,7 @@
 </head>
 <body>
 <header class="page-header">
+  <!-- .page-header--minimized - свёрнутое соостояние; .page-header--expanded - развёрнутое состояние -->
   <div class="container page-header__container">
     <a href="index.html" class="page-header__logo logo">
       <svg x="0" y="0" width="146" height="40" class="logo__svg">
@@ -53,7 +54,7 @@
 <main class="page-main">
   <div class="intro">
     <div class="container">
-      <h1 class="text text--large text--light text--normal text--white intro__text">Фотографии <br> пользователей</h1>
+      <h1 class="text text--large text--light text--normal text--white intro__text">Фотографии &#32;<br> пользователей</h1>
     </div>
   </div>
 
@@ -67,17 +68,15 @@
       </p>
     </div>
 
-
-
     <div class="container">
       <ul class="photo-feed__photo-list photo-list">
         <li class="photo-list__item photo-list__item--panorama">
           <figure class="photo-object">
             <a href="#" class="photo-object__link">
               <picture>
-                <source media="(min-width: 960px)"
+                <source media="(min-width: 960px)" type="image/webp"
                         srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
-                <source media="(min-width: 660px)"
+                <source media="(min-width: 660px)" type="image/webp"
                         srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
                 <source media="(min-width: 960px)"
                         srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
@@ -119,9 +118,9 @@
           <figure class="photo-list__photo-object photo-object">
             <a href="#" class="photo-object__link">
               <picture>
-                <source media="(min-width: 960px)"
+                <source media="(min-width: 960px)" type="image/webp"
                         srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
-                <source media="(min-width: 660px)"
+                <source media="(min-width: 660px)" type="image/webp"
                         srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
                 <source media="(min-width: 960px)"
                         srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
@@ -161,9 +160,9 @@
           <figure class="photo-list__photo-object photo-object">
             <a href="#" class="photo-object__link">
               <picture>
-                <source media="(min-width: 960px)"
+                <source media="(min-width: 960px)" type="image/webp"
                         srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
-                <source media="(min-width: 660px)"
+                <source media="(min-width: 660px)" type="image/webp"
                         srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
                 <source media="(min-width: 960px)"
                         srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
@@ -203,9 +202,9 @@
           <figure class="photo-list__photo-object photo-object">
             <a href="#" class="photo-object__link">
               <picture>
-                <source media="(min-width: 960px)"
+                <source media="(min-width: 960px)" type="image/webp"
                         srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
-                <source media="(min-width: 660px)"
+                <source media="(min-width: 660px)" type="image/webp"
                         srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
                 <source media="(min-width: 960px)"
                         srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
@@ -245,9 +244,9 @@
           <figure class="photo-list__photo-object photo-object">
             <a href="#" class="photo-object__link">
               <picture>
-                <source media="(min-width: 960px)"
+                <source media="(min-width: 960px)" type="image/webp"
                         srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
-                <source media="(min-width: 660px)"
+                <source media="(min-width: 660px)" type="image/webp"
                         srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
                 <source media="(min-width: 960px)"
                         srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
@@ -287,9 +286,9 @@
           <figure class="photo-list__photo-object photo-object">
             <a href="#" class="photo-object__link">
               <picture>
-                <source media="(min-width: 960px)"
+                <source media="(min-width: 960px)" type="image/webp"
                         srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
-                <source media="(min-width: 660px)"
+                <source media="(min-width: 660px)" type="image/webp"
                         srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
                 <source media="(min-width: 960px)"
                         srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
@@ -329,9 +328,9 @@
           <figure class="photo-list__photo-object photo-object">
             <a href="#" class="photo-object__link">
               <picture>
-                <source media="(min-width: 960px)"
+                <source media="(min-width: 960px)" type="image/webp"
                         srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
-                <source media="(min-width: 660px)"
+                <source media="(min-width: 660px)" type="image/webp"
                         srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
                 <source media="(min-width: 960px)"
                         srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
@@ -382,9 +381,9 @@
         <figure class="photo-form__photo-object photo-object">
           <a href="#" class="photo-object__link">
             <picture>
-              <source media="(min-width: 960px)"
+              <source media="(min-width: 960px)" type="image/webp"
                       srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
-              <source media="(min-width: 660px)"
+              <source media="(min-width: 660px)" type="image/webp"
                       srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
               <source media="(min-width: 960px)"
                       srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
@@ -484,6 +483,14 @@
   </div>
 </footer>
 
+<script src="libs/svg4everybody/dist/svg4everybody.min.js"></script>
+<script src="libs/picturefill/dist/picturefill.min.js"></script>
+
+<script>
+    svg4everybody();
+</script>
+
 <script type="module" src="js/app.js"></script>
+<script nomodule src="js/app.nomodule.js"></script>
 </body>
 </html>

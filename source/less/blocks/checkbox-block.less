@@ -14,6 +14,14 @@
   outline: 2px solid rgb(125, 173, 217);
 }
 
+.checkbox-block__control:disabled ~ .checkbox-block__label {
+  color: #e5e5e5;
+
+  &::before {
+    border-color: #e5e5e5;
+  }
+}
+
 .checkbox-block__label {
   .check-label-style();
 }

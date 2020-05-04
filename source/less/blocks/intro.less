@@ -39,9 +39,14 @@
 }
 
 .intro__text {
-  margin-bottom: 27px;
+  margin-bottom: 0;
+  width: 100%;
 
   text-align: center;
+
+  &--index {
+    margin-bottom: 27px;
+  }
 
   br {
     display: none;
@@ -146,6 +151,10 @@
 
     &--index {
       padding-top: 218px;
+
+      &.intro--script-enabled {
+        padding-top: 218px;
+      }
     }
   }
 

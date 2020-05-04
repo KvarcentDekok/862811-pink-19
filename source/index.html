@@ -11,6 +11,7 @@
 </head>
 <body>
 <header class="page-header">
+  <!-- .page-header--minimized - свёрнутое соостояние; .page-header--expanded - развёрнутое состояние -->
   <div class="container page-header__container">
     <a href="index.html" class="page-header__logo logo">
       <svg x="0" y="0" width="146" height="40" class="logo__svg">
@@ -29,7 +30,7 @@
       <span class="visually-hidden">Развернуть/свернуть меню</span>
     </button>
 
-    <nav class="main-navigation">
+    <nav class="main-navigation"  id="main-navigation">
       <ul class="main-navigation__navigation-list navigation-list">
         <li class="navigation-list__item">
           <a href="index.html" class="navigation-list__link navigation-list__link--active" aria-current="page">
@@ -58,13 +59,13 @@
 
     <div class="container intro__container">
       <p class="text text--large text--light text--white intro__text intro__text--index">
-        Взгляните <br> на жизнь <br> иначе!
+        Взгляните &#32;<br> на жизнь &#32;<br>иначе!
       </p>
 
       <picture>
-        <source media="(min-width: 960px)"
+        <source media="(min-width: 960px)" type="image/webp"
                 srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
-        <source media="(min-width: 660px)"
+        <source media="(min-width: 660px)" type="image/webp"
                 srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
         <source media="(min-width: 960px)"
                 srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
@@ -449,6 +450,14 @@
   </div>
 </footer>
 
+<script src="libs/svg4everybody/dist/svg4everybody.min.js"></script>
+<script src="libs/picturefill/dist/picturefill.min.js"></script>
+
+<script>
+    svg4everybody();
+</script>
+
 <script type="module" src="js/app.js"></script>
+<script nomodule src="js/app.nomodule.js"></script>
 </body>
 </html>
