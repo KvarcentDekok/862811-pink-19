@@ -37,6 +37,18 @@
   .list-reset();
 }
 
+.form__list-wrapper {
+  .checkbox-block:last-of-type {
+    margin-bottom: 42px;
+  }
+
+  &:last-of-type {
+    .checkbox-block:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .form__label {
   display: block;
   margin-bottom: 40px;
@@ -146,6 +158,18 @@
     padding: 0 58px;
   }
 
+  .form__list-wrapper {
+    .checkbox-block:last-of-type {
+      margin-bottom: 42px;
+    }
+
+    &:last-of-type {
+      .checkbox-block:last-of-type {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
   .form__button-wrapper {
     display: flex;
     align-items: center;
@@ -193,12 +217,6 @@
         padding-right: 25px;
       }
     }
-
-    &--achievements {
-      .form__list {
-        height: 166px;
-      }
-    }
   }
 
   .form__field {
@@ -217,27 +235,25 @@
     &--flex {
       display: flex;
       flex-wrap: wrap;
-      margin-right: -35px;
-      margin-left: -35px;
+      justify-content: space-between;
 
       .text-control-block {
-        width: calc(50% - 70px);
-        margin-left: 35px;
-        margin-right: 35px;
+        width: calc(50% - 35px);
         margin-bottom: 0;
       }
-    }
 
-    &--flex-column {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-content: space-between;
-      max-height: 100%;
-
-      .checkbox-block {
-        max-width: calc(33%);
+      .form__list-wrapper {
+        max-width: calc(100% / 3);
       }
+    }
+  }
+
+  .form__list-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .checkbox-block:last-of-type {
+      margin-bottom: 34px;
     }
   }
 
